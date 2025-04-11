@@ -2,6 +2,7 @@
 
 import argparse
 import json
+import re
 from pathlib import Path
 
 def load_policy(file_path):
@@ -44,6 +45,13 @@ def extract_permissions(policy):
         })
 
     return permissions
+
+def load_aws_action_db():                           # Loads all the AWS actions from JSON file 
+    path = "./aws_actions.json"
+    with open(path, "r") as f:
+        return(json.load(f))
+
+    
 
 def main():
     parser = argparse.ArgumentParser(description="Simulate IAM policy blast radius.")
