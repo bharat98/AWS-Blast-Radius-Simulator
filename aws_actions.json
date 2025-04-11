@@ -1,0 +1,51 @@
+{
+  "s3": [
+    "s3:GetObject",
+    "s3:PutObject",
+    "s3:ListBucket",
+    "s3:DeleteObject"
+  ],
+  "ec2": [
+    "ec2:StartInstances",
+    "ec2:StopInstances",
+    "ec2:DescribeInstances",
+    "ec2:TerminateInstances"
+  ],
+  "iam": [
+    "iam:PassRole",
+    "iam:CreateUser",
+    "iam:AttachUserPolicy",
+    "iam:PutRolePolicy"
+  ],
+  "lambda": [
+    "lambda:InvokeFunction",
+    "lambda:UpdateFunctionCode",
+    "lambda:CreateFunction",
+    "lambda:DeleteFunction"
+  ],
+  "logs": [
+    "logs:CreateLogGroup",
+    "logs:PutLogEvents",
+    "logs:DescribeLogStreams"
+  ],
+  "cloudwatch": [
+    "cloudwatch:PutMetricData",
+    "cloudwatch:GetMetricData"
+  ],
+  "codebuild": [
+    "codebuild:StartBuild",
+    "codebuild:BatchGetProjects"
+  ],
+  "codepipeline": [
+    "codepipeline:StartPipelineExecution",
+    "codepipeline:GetPipeline"
+  ],
+  "ecs": [
+    "ecs:RunTask",
+    "ecs:DescribeServices"
+  ],
+  "cloudformation": [
+    "cloudformation:CreateStack",
+    "cloudformation:DeleteStack"
+  ]
+}
