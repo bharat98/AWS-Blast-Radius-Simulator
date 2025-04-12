@@ -1,0 +1,19 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "DevOpsFullPipeline",
+      "Effect": "Allow",
+      "Action": [
+        "codebuild:*",
+        "codepipeline:*",
+        "ecs:*",
+        "iam:PassRole",
+        "cloudformation:*",
+        "s3:*",
+        "ec2:*"
+      ],
+      "Resource": "*"
+    }
+  ]
+}
