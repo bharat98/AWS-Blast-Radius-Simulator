@@ -4,6 +4,7 @@ import argparse
 import json
 from pathlib import Path
 import re
+from escalation_rules import detect_escalation
 
 # ======================================== Wildcard Expansion ========================================
 
@@ -109,5 +110,11 @@ def main():
         for resource in p['Resources']:
             print(f"    Resource: {resource}")
 
+        escalations = detect_escalation(p['ExpandedActions'])
+        if escalations:
+            print("    🚨 Privilege Escalation Detected:")
+            for e in escalations:
+                print(f"      ➤ {e}")
+                
 if __name__ == "__main__":
     main()
