@@ -104,7 +104,6 @@ If you'd like to collaborate, feel free to connect or drop an issue.
 ## 📜 License
 
 MIT License
-```
 
 
 
